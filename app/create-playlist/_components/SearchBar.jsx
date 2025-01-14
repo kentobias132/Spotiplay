@@ -2,20 +2,23 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function SearchBar({ searchTerm, onSearch, onSearchHandler }) {
   return (
     <div className="text-white">
       <header className="flex items-center">
-        <div className="flex items-center py-4 lg:px-10 ">
-          <Image
-            src={"/logo.png"}
-            width={35}
-            height={35}
-            alt="spotiplay logo"
-          />
-          <h1 className="font-spro font-semibold text-xl mx-1">Spotiplay</h1>
-        </div>
+        <Link href={"/"}>
+          <div className="flex items-center py-4 lg:px-10 ">
+            <Image
+              src={"/logo.png"}
+              width={35}
+              height={35}
+              alt="spotiplay logo"
+            />
+            <h1 className="font-spro font-semibold text-xl mx-1">Spotiplay</h1>
+          </div>
+        </Link>
 
         <div className="bg-[#121212] py-2 pl-4 flex rounded-full">
           <input

@@ -7,6 +7,7 @@ import {
   ArrowUpRightFromCircleIcon,
 } from "lucide-react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 function DetailSection() {
   return (
@@ -16,7 +17,12 @@ function DetailSection() {
       </h1>
       <div className=" md:flex">
         <div className=" px-4 md:w-1/2 flex justify-center">
-          <Image src={"/Group3.png"} width={400} height={400} />
+          <Image
+            src={"/Group3.png"}
+            alt="spotiply QR scan"
+            width={400}
+            height={400}
+          />
         </div>
         <div className="md:w-1/2 p-4 md:px-0">
           <div className="flex items-center">
@@ -70,9 +76,11 @@ function DetailSection() {
                 Add songs to your playlist, customize it, and sync it to Spotify
                 in seconds.
               </p>
-              <Button className="bg-transparent border hover:bg-green-900/30 mt-4 p-5 text-lg rounded-full">
-                Get Started For Free <ArrowUpRightFromCircleIcon />
-              </Button>
+              <Link href={"/create-playlist"}>
+                <Button className="bg-transparent border hover:bg-green-900/30 mt-4 p-5 text-lg rounded-full">
+                  Get Started For Free <ArrowUpRightFromCircleIcon />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

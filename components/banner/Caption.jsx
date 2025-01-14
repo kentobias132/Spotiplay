@@ -9,7 +9,7 @@ function Caption() {
   return (
     <div className="p-4 bg-[#121212] text-white rounded-3xl">
       <div className="flex items-center py-4 lg:px-10 ">
-        <Image src={"/logo.png"} width={35} height={35} />
+        <Image src={"/logo.png"} alt="spotiplay logo" width={35} height={35} />
         <h1 className="font-spro font-semibold text-xl mx-1">Spotiplay</h1>
       </div>
       <div className="py-10 md:py-0 md:px-5 lg:px-10 md:flex flex-col justify-center h-[90%]">

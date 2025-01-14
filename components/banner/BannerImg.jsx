@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import morkhand from "@/public/morkhand.png";
 import Link from "next/link";
 
 function BannerImg() {
@@ -16,7 +15,12 @@ function BannerImg() {
         <Link href={"/"}> Profile </Link>
       </div>
       <div className="flex justify-center">
-        <Image alt="spotiplay logo" src={morkhand} width={450} height={450} />
+        <Image
+          alt="spotiplay logo"
+          src={"/morkhand.png"}
+          width={450}
+          height={450}
+        />
       </div>
     </div>
   );
