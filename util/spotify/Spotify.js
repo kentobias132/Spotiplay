@@ -3,7 +3,8 @@ const tokenKey = "spotifyAccessToken";
 const expiryKey = "tokenExpiryTime";
 
 const clientID = "c98eaf2b5e4d41fc9c9a736b74315f63";
-const redirectUrl = "http://localhost:3000/create-playlist";
+// const redirectUrl = "http://localhost:3000/create-playlist";
+const redirectUrl = "https://spotiplay-nine.vercel.app/create-playlist";
 
 const Spotify = {
   async getAccessToken() {
@@ -79,9 +80,9 @@ const Spotify = {
       return tracks;
     } catch (error) {
       console.error("Search Error:", error);
-      if (error.message.startsWith("Failed to get access token")) {
-        window.location = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUrl}`;
-      }
+      // if (error.message.startsWith("Failed to get access token")) {
+      //   window.location = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUrl}`;
+      // }
     }
   },
 
@@ -105,9 +106,9 @@ const Spotify = {
       return playlistId; //Return the playlist ID
     } catch (error) {
       console.error("Error saving playlist:", error);
-      if (error.message.startsWith("Failed to obtain access token")) {
-        window.location = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUrl}`;
-      }
+      // if (error.message.startsWith("Failed to obtain access token")) {
+      //   window.location = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUrl}`;
+      // }
     }
   },
 
