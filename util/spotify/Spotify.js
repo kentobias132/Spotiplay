@@ -4,6 +4,8 @@ const expiryKey = "tokenExpiryTime";
 
 const clientID = "c98eaf2b5e4d41fc9c9a736b74315f63";
 const redirectUrl = "https://spotiplay-nine.vercel.app/create-playlist";
+const scope = "playlist-modify-public playlist-modify-private";
+const encodedScope = encodeURIComponent(scope);
 
 const Spotify = {
   async getAccessToken() {
@@ -40,7 +42,7 @@ const Spotify = {
     }
 
     // Redirect to Spotify for authorization if no token is found
-    const redirect = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUrl}`;
+    const redirect = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=${encodedScope}&redirect_uri=${redirectUrl}`;
     window.location = redirect;
   },
 
