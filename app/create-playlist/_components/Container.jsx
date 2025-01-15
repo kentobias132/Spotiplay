@@ -45,7 +45,7 @@ function Container() {
 
   return (
     <div
-      className="w-full bg-no-repeat bg-center bg-cover h-screen bg-green-600/25
+      className="w-full bg-no-repeat bg-center bg-cover bg-green-600/25
   "
       style={{ backgroundImage: "url('spotifycurves.png')" }}
     >
