@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SpotyPlay
 
-## Getting Started
+## Project Purpose
 
-First, run the development server:
+SpotyPlay is a web application designed to empower users to create custom playlists from a curated collection of tracks. It allows you to search for songs, select from the results, name your playlist, and then seamlessly add it to your Spotify account.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project was built using the following technologies:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **React:** For building the user interface.
+- **Next.js:** For server-side rendering and routing.
+- **TypeScript:** For adding static typing to enhance code quality.
+- **Tailwind CSS:** For styling the components with utility classes.
+- **React Toastify:** For displaying user-friendly notifications.
+- **Shadcn:** For UI components.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Search:** Users can search for any song using the search bar.
+- **Track Display:** Displays up to 20 tracks based on the user's search query.
+- **Custom Playlist Creation:** Users can select tracks from the results and create a custom playlist.
+- **Playlist Naming:** Users can give their created playlists a name.
+- **Spotify Integration:** The user has the ability to add the newly created playlists to their Spotify Account.
 
-To learn more about Next.js, take a look at the following resources:
+## Future Work
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Playlist Editing:** Implement the ability for users to edit the playlists they create.
+- **User Authentication:** Allow users to create and manage their accounts to save and organize playlists.
+- **Advanced Search Filtering:** Implement more advanced search features, such as filtering by artist, album, and genre.
+- **UI Enhancements:** Improve the overall user interface for a more engaging experience.
